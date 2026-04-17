@@ -79,7 +79,7 @@ PAYLOAD=$(cat <<EOF
       { "name": "🖥️ Hostname", "value": "\`$H\`", "inline": true },
       { "name": "💿 OS Info", "value": "$OS", "inline": true }
     ],
-    "footer": { "text": "Unique ID: $(date '+%s') • $(date '+%H:%M:%S')" }
+    "footer": { "text": "Unique ID: $(date +%s) • $(date +%H:%M:%S)" }
   }]
 }
 EOF
