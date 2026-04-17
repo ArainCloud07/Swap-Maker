@@ -2,7 +2,7 @@ bash -c '
 
 clear
 echo "======================================"
-echo "      ⚡ SMARTY SWAP SETUP ⚡         "
+echo "      ⚡ VPS SWAP SETUP ⚡         "
 echo "======================================"
 echo ""
 echo "👉 Enter how much GB swap you want"
